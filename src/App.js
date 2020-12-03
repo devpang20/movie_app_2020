@@ -1,5 +1,8 @@
-import React from 'react'; // 지워도 가능
-import Test from './Test';
+import React from 'react';
+
+function Test() {
+  return <h1>Test section</h1>
+}
 
 function App() {
   return (
