@@ -1,25 +1,58 @@
 import React from 'react';
 
-function Test({ item }) {
-  return <h1>Test {item} section</h1>
+function Test({ name, image}) {
+  return (
+    <div> 
+      <h2>Test {name} section</h2>
+      <img src={image} />
+    </div>
+  )
+
 }
 
-function Test2(props) {
-  console.log(props)
-  return <h1>Test {props.item} section</h1>
-}
+  const itemList = [
+    {
+      name: "item1",
+      image: "imageUrl"
+    },
+    {
+      name: "item2",
+      image: "imageUrl"
+    },
+    {
+      name: "item3",
+      image: "imageUrl"
+    },
+    {
+      name: "item4",
+      image:
+      "imageUrl"
+    },
+    {
+      name: "item5",
+      image:
+      "imageUrl"
+    },
+    {
+      name: "item6",
+      image:
+      "imageUrl"
+    },
+    {
+      name: "item7",
+      image:
+      "imageUrl"
+    }
+  ]
+
 
 function App() {
   return (
     <div className="App">
-      Hello World!!!
-      <Test item='one'/>
-      <Test item='two'/>
-      <Test item='three'/>
-      <Test2
-        a='test2'
-        b='console'
-      />
+      <h1>printItem</h1>
+      {itemList.map(item => (
+        <Test name={item.name}  image={item.image} />
+      ))}
     </div>
   );
 }
