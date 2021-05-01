@@ -1,7 +1,10 @@
-import React from 'react'
-
+import React from 'react';
+import { HashRouter, Route } from "react-router-dom";
+ 
 function App(){
-  return <span></span>
+  return <HashRouter>
+    <Route />
+  </HashRouter>
 }
 
 export default App;
