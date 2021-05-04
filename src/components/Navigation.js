@@ -6,10 +6,10 @@ function Navigation(){
         <Link to="/">Home</Link>
         <Link 
             to={{
-            pathname: "/about",
-            state: {
-                fromNavigation: true
-            }
+                pathname: "/about",
+                state: {
+                    fromNavigation: true
+                }
             }}
             >
                 About
